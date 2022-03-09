@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+*
+{
+    font-family: 'Roboto',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear
+
+}
+
+section{
+    padding: 3px  ;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0px;
+    right: 0px;
+   background: rgb(255, 151, 151);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header .logo{
+    font-size: 30px;
+color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.header .logo i{
+   color: rgb(133, 44, 2);
+   font-size: 35px;
+}
+.header .navbar a{
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: rgb(180, 56, 15);
+    margin: 0 1.5rem;
+    padding: 3px;
+}
+.header .navbar a:hover{
+    color: rgb(3, 13, 95);
+}
+.header .icons  a{
+    height: 10px;
+    width: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 1.5rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+    margin-right: 2.5rem;
+
+}
+
+.header .icons a:hover{
+    background: rgb(15, 165, 179);
+    color: rgb(251, 160, 160);
+}
+.header #menu-btn{
+    display: none;
+}
+.home{
+    text-decoration: double;
+    text-transform: none;
+    text-align:center;
+    font-size: 15px;
+}
+.content{
+    font-style: italic;
+    padding:5px;
+}
+.btn{
+   
+    border: 1px solid black;
+    background-color: rgb(243, 106, 106);
+    color: black;
+    padding: 3px 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(3, 13, 95);
+    
+}
+.Aboutus{
+    text-transform: none;
+    text-decoration: double;
+      text-align: center;
+}
+.imgaa{
+    box-sizing: border-box;
+    margin: 2px;
+    height: 500px;
+    width: 600px;
+    
+}
+.contentt{
+    text-align: center;
+    padding-top: 18px;
+    margin-top: 15px;
+    font-style: italic;
+}
+.my{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.hy{
+    font-size: 18px;
+   text-align: center;
+}
+.btnn{
+    border: 1px solid black;
+    background-color: rgb(243, 106, 106);
+    color: black;
+    padding: 3px 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btnn:hover{
+    color:rgb(0, 89, 100);
+}
+.contentt:hover{
+    color: rgb(246, 105, 105);
+}
+.imm{
+    box-sizing: border-box;
+    margin: 2px;
+    height: 300px;
+    width: 350px;
+    
+}
+.immm{
+    box-sizing: border-box;
+    margin: 2px;
+    height: 300px;
+    width: 500px;
+    padding-left: 80px;
+
+}
+   .ia{
+    box-sizing: border-box;
+    margin: 2px;
+    height: 300px;
+    width: 350px;
+    padding-left: 50px;
+   }
+.text{
+    text-align-last: center;
+    font-style: italic;
+    font-family: monospace;
+}
+.butn{
+    border: 1px solid rgb(131, 41, 5);
+    background-color: rgb(238, 117, 117);
+    color: black;
+    padding: 0.5px 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.butn:hover{
+    color: rgb(102, 45, 4);
+}
+.butnn
+{
+    border: 1px solid rgb(131, 41, 5);
+    background-color: rgb(238, 117, 117);
+    color: black;
+    padding: 0.5px 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.butnn:hover{
+    color: dodgerblue;
+}
+.textt{
+    text-align: center;
+    font-style: italic;
+   
+}
+.mess{
+    box-sizing: border-box;
+    margin: 2px;
+    height: 400px;
+    width: 450px;
+  
+}
+.Message{
+    text-decoration: double;
+    text-transform: none;
+    text-align:center;
+    font-size: 15px;
+}
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .header #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        background: rgb(235, 171, 195);
+        border-top: 2px solid #222;
+        border-bottom: 2px solid #222;
+        padding: 2.5px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        font-size:20px;
+        margin:3rem 1rem;
+        font-family:cursive;
+    }
+    
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+   
+}
+
+
+
+
+
